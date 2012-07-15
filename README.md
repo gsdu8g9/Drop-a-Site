@@ -1,0 +1,1 @@
+A small, boilerplate-like starter-kit for a simple site.
