@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# define the rewrite base if needed and un-comment the line
+	# RewriteBase /yoursite/
+
+	# show files and directories, that exist
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	# the rest is handled by the index.php
+	RewriteRule .* index.php [L]
+</IfModule>
