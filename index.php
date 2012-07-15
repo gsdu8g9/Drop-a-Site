@@ -4,8 +4,6 @@
 	$pages = array('index', 'about');
 	$req = trim($_SERVER['REQUEST_URI'], '/');
 
-	print_r($req);
-
 	# if the request-string is empty, show the index-page
 	if ( empty($req) ) {
 		$req = 'index';
