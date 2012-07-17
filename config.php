@@ -16,7 +16,7 @@
 	);
 
 	# extracting the request string
-	$req = trim(str_replace('/Drop-a-Site/', '', $_SERVER['REQUEST_URI']), '/');
+	$req = trim($_SERVER['REQUEST_URI'], '/');
 
 	# if the request string is empty, show the index-page
 	if ( empty($req) ) {
