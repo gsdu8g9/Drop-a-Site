@@ -21,7 +21,7 @@ ______________________
 
 **What else?**
 
-I rely on [HTML5 Boilerplate](http://html5boilerplate.com/) for this project. Why? I like. But it's not fully integrated. Maybe I'll do this later.
+I partly rely on [HTML5 Boilerplate](http://html5boilerplate.com/) for this project. Why? I like. But it's not fully integrated. Maybe I'll do this later.
 
 ______________________
 
