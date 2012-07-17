@@ -1,24 +1,4 @@
-<?php
-
-	# add your pages to the array (all except 404)
-	$pages = array('index', 'about');
-	$req = trim($_SERVER['REQUEST_URI'], '/');
-
-	# if the request-string is empty, show the index-page
-	if ( empty($req) ) {
-		$req = 'index';
-	}
-
-	$currentPage = in_array($req, $pages)
-		? $req
-		: '404';
-
-	# setting the correct header
-	if ( $currentPage == '404' ) {
-		header('HTTP/1.0 404 Not Found');
-	}
-
-?>
+<?php require_once('config.php'); ?>
 <!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="de"> <![endif]-->
@@ -31,10 +11,15 @@
 
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width">
-	<title>Drop a Site</title>
+	<base href="<?php echo SITE_URL; ?>">
+
+	<?php if ( $currentPage == 'index' ) : ?>
+		<title>Drop a Site</title>
+	<?php else : ?>
+		<title><?php echo $pages[$currentPage]; ?> | Drop a Site</title>
+	<?php endif; ?>
 
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="assets/css/nomalize.css">
 	<link rel="stylesheet" href="assets/css/app.css">
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"></script>
@@ -46,27 +31,17 @@
 </head>
 <body>
 
-	<p>&gt;&gt; Drop a Site</p>
+	<?php include('inc/components/header.inc.php'); ?>
 
-	<hr>
+	<article>
+		<?php include('inc/' . $currentPage . '.inc.php'); ?>
+	</article>
 
-	<nav>
-		<ul>
-			<li>
-				<a href="/">Home</a>
-			</li>
-			<li>
-				<a href="/about/">About</a>
-			</li>
-		</ul>
-	</nav>
-
-	<hr>
-
-	<?php include('inc/' . $currentPage . '.inc.php'); ?>
+	<?php include('inc/components/footer.inc.php'); ?>
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+	<script src="assets/js/plugins.js"></script>
 	<script src="assets/js/script.js"></script>
 
 </body>

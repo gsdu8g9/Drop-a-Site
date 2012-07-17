@@ -6,5 +6,8 @@
 	# Now write all your stuff.
 ?>
 
-<h1>Nothing found</h1>
-<p>Sorry, the expected page doesn't exist.</p>
+<hr>
+
+<footer>
+	<p>&copy; <?php echo date('Y'); ?> &middot; <a href="http://www.emanuel-kluge.de/">Emanuel Kluge</a></p>
+</footer>

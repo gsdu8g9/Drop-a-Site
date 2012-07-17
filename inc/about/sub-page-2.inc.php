@@ -6,5 +6,5 @@
 	# Now write all your stuff.
 ?>
 
-<h1>Nothing found</h1>
-<p>Sorry, the expected page doesn't exist.</p>
+<h1>Sub-Page 2</h1>
+<p>Dolor sit amet</p>
