@@ -1,12 +1,12 @@
 <?php
 
-	# define this for security reasons
+	# define this for security reasons - do not touch!
 	define('SITE_DROPPED', true);
 
-	# define the URL of your site
+	# define the URL of your site - edit this.
 	define('SITE_URL', 'http://www.example.com/');
 
-	# add your pages and titles to the array
+	# add your pages and titles to the array - edit this as well.
 	$pages = array(
 		'index' => 'Home',
 		'about' => 'About',
@@ -15,8 +15,10 @@
 		'404' => 'Nothing found'
 	);
 
-	# extracting the request string
+	# extracting the request string - edit this, if your site is in sub-directory.
 	$req = trim($_SERVER['REQUEST_URI'], '/');
+
+	## don't bother with the following stuff.
 
 	# if the request string is empty, show the index-page
 	if ( empty($req) ) {
