@@ -15,7 +15,7 @@
 		'404' => 'Nothing found'
 	);
 
-	# extracting the request string - edit this, if your site is in sub-directory.
+	# extracting the request string - edit this, if your site is in a sub-directory.
 	$req = trim($_SERVER['REQUEST_URI'], '/');
 
 	## don't bother with the following stuff.
