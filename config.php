@@ -1,7 +1,7 @@
 <?php
 
-	# define this for security reasons - do not touch!
-	define('SITE_DROPPED', true);
+	# Don't show anything, when the site is called directly.
+	if ( !defined('SITE_DROPPED') ) die();
 
 	# define the URL of your site - edit this.
 	define('SITE_URL', 'http://www.example.com/');
