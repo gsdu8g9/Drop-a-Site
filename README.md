@@ -62,4 +62,5 @@ I partly rely on [HTML5 Boilerplate](http://html5boilerplate.com/) for this proj
 ______________________
 
 My site: [www.emanuel-kluge.de](http://www.emanuel-kluge.de/)  
-My twitter: [Herschel_R](http://twitter.com/Herschel_R)
+My twitter: [twitter.com/Herschel_R](http://twitter.com/Herschel_R)  
+My G00gle+: <a href="https://plus.google.com/102002036557153714970" rel="author">klg.bz/+</a>
