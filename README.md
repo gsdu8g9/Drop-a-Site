@@ -5,7 +5,7 @@ Drop-a-Site
 
 _______________________
 
-**What do you use it for?**
+## What do you use it for?
 
 Sometimes you happen to release a small site, that's too small to use a CMS or a PHP-framework, but you don't want to bother with static HTML-files as well. That's when you use "Drop-s-site".
 
@@ -13,13 +13,13 @@ It has a simple URL-rewriting and all your sites are represented by php-include-
 
 _______________________
 
-**When not to use "Drop-a-Site"?**
+## When not to use "Drop-a-Site"?
 
 When you are building a more complex site structure and want to include a news sections, a contact form, etc, you should rather use a CMS. Extending "Drop-a-Site" would be a waste of time. Others already completed the tasks you are confronted with.
 
 ______________________
 
-**How to use “Drop-a-Site”?**
+## How to use “Drop-a-Site”?
 
 _1. Get the files_
 
@@ -55,7 +55,7 @@ Congrats, you're finished!
 
 ______________________
 
-**What else?**
+## What else?
 
 I partly rely on [HTML5 Boilerplate](http://html5boilerplate.com/) for this project. Why? Because I like it. But it's not fully integrated. Maybe I'll do this later. Maybe not …
 
@@ -64,3 +64,15 @@ ______________________
 My site: [www.emanuel-kluge.de](http://www.emanuel-kluge.de/)  
 My twitter: [twitter.com/Herschel_R](http://twitter.com/Herschel_R)  
 My G00gle+: <a href="https://plus.google.com/102002036557153714970" rel="author">klg.bz/+</a>
+
+----------------------
+
+## License
+
+Copyright (c) Emanuel Kluge
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
